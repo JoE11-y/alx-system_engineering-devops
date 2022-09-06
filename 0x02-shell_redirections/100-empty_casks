@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -empty -print -o -type f -empty -print
+find -mindepth 1 -type f -empty -printf '%f\n' -o -type d -empty -printf '%f\n' 
